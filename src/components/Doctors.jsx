@@ -17,7 +17,7 @@ const Doctors = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 mx-auto gap-5 place-content-center place-items-center w-full">
+      <div className="grid grid-cols-2 md:grid-cols-3 mx-auto gap-3 md:gap-5 place-content-center place-items-center w-full">
         {doctors.slice(0,10).map((ele, idx) => {
           return <DoctorCard key={idx} data={ele} />;
         })}

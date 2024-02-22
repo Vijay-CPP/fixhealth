@@ -46,7 +46,7 @@ const SearchResult = () => {
       ) : (
         <div className="pt-24">
           <h1 className="text-xl text-gray-300 font-bold">Doctors in {city}</h1>
-          <div className="grid grid-cols-2 md:grid-cols-3 mx-auto gap-5 place-content-center place-items-center w-full mt-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 mx-auto gap-2 md:gap-5 place-content-center place-items-center w-full mt-10">
             {doctors.map((ele, idx) => {
               return <DoctorCard key={idx} data={ele} />;
             })}
